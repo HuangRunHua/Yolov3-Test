@@ -193,7 +193,7 @@ $ python detect.py --source data/images --weights best.pt --conf 0.25
 
 2. `yolov3-master/detect.py`文件内为训练的类别添加一个JSON格式的数据，数据内部的语言可以为中文，如：
 
-   ```json
+   ```python
    mylabels = {
        '喵内':'喵内',
        '日向':'日向',
