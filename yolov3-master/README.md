@@ -9,12 +9,12 @@ This repository represents Ultralytics open-source research into future object d
 <p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/114424655-a0dc1e00-9bb8-11eb-9a2e-cbe21803f05c.png"></p>
 <details>
   <summary>YOLOv5-P5 640 Figure (click to expand)</summary>
-  
+
 <p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/114313219-f1d70e00-9af5-11eb-9973-52b1f98d321a.png"></p>
 </details>
 <details>
   <summary>Figure Notes (click to expand)</summary>
-  
+
   * GPU Speed measures end-to-end time per image averaged over 5000 COCO val2017 images using a V100 GPU with batch size 32, and includes image preprocessing, PyTorch FP16 inference, postprocessing and NMS. 
   * EfficientDet data from [google/automl](https://github.com/google/automl) at batch size 8.
   * **Reproduce** by `python test.py --task study --data coco.yaml --iou 0.7 --weights yolov3.pt yolov3-spp.pt yolov3-tiny.pt yolov5l.pt`
@@ -49,7 +49,7 @@ Model |size<br><sup>(pixels) |mAP<sup>val<br>0.5:0.95 |mAP<sup>test<br>0.5:0.95 
 
 <details>
   <summary>Table Notes (click to expand)</summary>
-  
+
   * AP<sup>test</sup> denotes COCO [test-dev2017](http://cocodataset.org/#upload) server results, all other AP results denote val2017 accuracy.  
   * AP values are for single-model single-scale unless otherwise noted. **Reproduce mAP** by `python test.py --data coco.yaml --img 640 --conf 0.001 --iou 0.65`  
   * Speed<sub>GPU</sub> averaged over 5000 COCO val2017 images using a GCP [n1-standard-16](https://cloud.google.com/compute/docs/machine-types#n1_standard_machine_types) V100 instance, and includes FP16 inference, postprocessing and NMS. **Reproduce speed** by `python test.py --data coco.yaml --img 640 --conf 0.25 --iou 0.45`  
