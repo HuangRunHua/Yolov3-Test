@@ -138,13 +138,13 @@ $ pip install wandb
 
 `test_batch2_pred.jpg`显示了模型识别的结果集合，识别的图片与`test_batch2_labels.jpg`给定的图片相同。
 
-> ![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/test_batch2_pred.jpg)
+> ![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/test_batch2_pred.jpg)
 
 > ⚠️ 若在`coco1314.yaml`文件内采用中文命名训练类别，将会发生中文字符不识别的现象。但不会影响最终的识别结果。
 
 训练损失和性能指标也会记录到自定义`results.txt`的日志文件内，该日志文件在训练完成后绘制为`results.png`（见下图）。
 
-![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/test_batch2_pred.jpg)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/results.png)
 
 > 💡模型训练完成后，将得到两个模型best.pt与last.pt。根据需要选择对应的模型即可。
 
