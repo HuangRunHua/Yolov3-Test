@@ -230,3 +230,11 @@ $ python detect.py --source data/images --weights best.pt --conf 0.25
    ```
 
    
+
+   ## 示例视频
+
+   采用迭代1000次后得到的模型进行[天使降临到了我身边](https://www.bilibili.com/bangumi/play/ep259653?from=search&seid=5212473819539732767)视频的识别。点击以查看识别结果。
+
+   [![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/video.jpeg)](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.mp4)
+
+   
