@@ -1,4 +1,4 @@
-1. # Yolov3-Test
+   # Yolov3-Test
 
    ![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.png)
 
@@ -6,7 +6,7 @@
 
    使用Git下载程序的命令：
 
-   ```bash
+   ```python
    $ git clone https://github.com/HuangRunHua/Yolov3-Test.git
    ```
 
@@ -16,7 +16,7 @@
 
    Python 3.8或更高版本与全部`requirements.txt`内要求的依赖项，包括`torch> = 1.7`。 要安装所有依赖项，请运行：
 
-   ```bash
+   ```python
    $ cd yolov3
    $ pip install -r requirements.txt
    ```
@@ -37,7 +37,7 @@
    - 用于训练的类数量
    - 类名列表
 
-   ```bash
+   ```python
    # Train command: python train.py --data coco.yaml
    # Default dataset location is next to /yolov3:
    #   /parent_folder
@@ -92,7 +92,7 @@
 
    `/coco1314`文件夹与`/yolov3`文件夹**处于同一级别的目录下**。**YOLOv3**通过将**每个图像**路径中的`/images/`的最后一个实例替换为`/labels/`来**自动定位**每个图像的标签。将标记好的数据集放入`image`文件夹与`labels`文件夹内，并按一定的比例储存到各自的训练集文件夹、测试集文件夹和验证集文件夹内。例如：
 
-   ```bash
+   ```python
    coco1314/images/train/0000192.jpg  # image
    coco1314/labels/train/0000192.txt  # label
    ```
@@ -103,7 +103,7 @@
 
    通过指定数据集、批处理大小、图像大小和预训练的`--weights yolov3.pt`在COCO1314上训练YOLOv3模型，YOLOv3模型将会自动下载。通过指定如下语句开始训练：
 
-   ```bash
+   ```python
    # Train YOLOv3 on COCO1314 for 1000 epochs
    $ python train.py --img 640 --batch 16 --epochs 1000 --data coco1314.yaml --weights yolov3.pt
    ```
@@ -116,7 +116,7 @@
 
    Wandb现已与YOLOv3集成，用于训练运行的实时可视化和云记录。这可以更好地运行比较，并提高团队成员之间的可见度和协作。要启用W&B日志记录，请安装`wandb`，然后正常训练。采用pip安装`wandb`：
 
-   ```bash
+   ```python
    $ pip install wandb
    ```
 
@@ -156,7 +156,7 @@
 
    要对某个本地文件（例如`data/images`）中的示例图像或视频进行推断，可将`--source`后的内容改成文件目录索引：
 
-   ```bash
+   ```python
    $ python detect.py --source data/images --weights best.pt --conf 0.25
    ```
 
@@ -230,6 +230,6 @@
       ```
    ## 示例视频
    采用迭代1000次后得到的模型进行[天使降临到了我身边](https://www.bilibili.com/bangumi/play/ep259653?from=search&seid=5212473819539732767)视频的识别。点击以查看识别结果。
-   [![Watch Demo](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/chinese.jpg)](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.mp4)
+   [![Watch Demo](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/video.jpeg)](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.mp4)
 
    
