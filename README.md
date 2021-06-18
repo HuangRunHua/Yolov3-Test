@@ -1,6 +1,6 @@
 # Yolov3-Test
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/intro.png)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.png)
 
 ## 获取程序代码
 
@@ -84,7 +84,7 @@ names：[
 - 框坐标必须采用**规范化的xywh**格式（从0-1开始）。如果您的框是像素，请按图像宽度除以`x_center`和`width`，将`y_center`和`height`除以图像高度。
 - 用于训练的类标签号为零索引（从0开始，如下图所示）
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/txtfile.png)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/txtfile.png)
 
 `0000192.txt`文件共包括四个类，分别对应喵内（`0`类）、日向（`1`类）、乃爱（`2`类）和小花（`5`类）。
 
@@ -97,7 +97,7 @@ coco1314/images/train/0000192.jpg  # image
 coco1314/labels/train/0000192.txt  # label
 ```
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/coco1314.png)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/coco1314.png)
 
 #### 4.训练模型
 
@@ -126,25 +126,25 @@ $ pip install wandb
 
 ## 本地日志记录
 
-默认情况下，所有结果都会记录到`runs/train`，并为每次新的训练结果如``runs/train/exp2`、`runs/train/exp3`等创建一个新的实验目录。
+默认情况下，所有结果都会记录到`runs/train`，并为每次新的训练结果如`runs/train/exp2`、`runs/train/exp3`等创建一个新的实验目录。
 
 本实验的`train_batch0.jpg`如下图所示。
 
->![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/train_batch0.jpg)
+> ![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/train_batch0.jpg)
 
 `test_batch2_labels.jpg`表示部分用于测试的图片合成图，通常如下图所示。
 
-> ![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/test_batch2_labels.jpg)
+> ![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/test_batch2_labels.jpg)
 
 `test_batch2_pred.jpg`显示了模型识别的结果集合，识别的图片与`test_batch2_labels.jpg`给定的图片相同。
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/test_batch2_pred.jpg)
+> ![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/test_batch2_pred.jpg)
 
 > ⚠️ 若在`coco1314.yaml`文件内采用中文命名训练类别，将会发生中文字符不识别的现象。但不会影响最终的识别结果。
 
 训练损失和性能指标也会记录到自定义`results.txt`的日志文件内，该日志文件在训练完成后绘制为`results.png`（见下图）。
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/results.png)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/test_batch2_pred.jpg)
 
 > 💡模型训练完成后，将得到两个模型best.pt与last.pt。根据需要选择对应的模型即可。
 
@@ -166,7 +166,7 @@ $ python detect.py --source data/images --weights best.pt --conf 0.25
 
 若希望模型实战后将识别的物体标签语言更改为中文，如下图所示：
 
-![](/Users/runhuahuang/Documents/本科/本科毕业设计/喵内测试/ReadMeImages/chinese.jpg)
+![](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/chinese.jpg)
 
 需要修改`yolov3-master/utils/plots.py`内的内容。
 
