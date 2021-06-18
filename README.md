@@ -228,5 +228,7 @@ $ python detect.py --source data/images --weights best.pt --conf 0.25
            im0 = plot_one_box_PIL(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=3)
    
    ```
-
+## 示例视频
+采用迭代1000次后得到的模型进行[天使降临到了我身边](https://www.bilibili.com/bangumi/play/ep259653?from=search&seid=5212473819539732767)视频的识别。点击以查看识别结果。
+[![Watch Demo](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/chinese.jpg)](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.mp4)
    
