@@ -233,6 +233,6 @@
    [![Watch Demo](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/video.jpeg)](https://github.com/HuangRunHua/Yolov3-Test/blob/main/ReadMeImages/intro.mp4)
    
    ## 更多
-   若要获取更多信息，请访问[ultralytics/yolov3](https://github.com/ultralytics/yolov3)
+   若要获取更多信息，请访问[ultralytics/yolov3](http://m.iqiyi.com/v_1q05jp6iwq0.html?social_platform=link&p1=2_22_221&_frd=r3T7FVFZY4WGpn7q8D4%2BAkJ9%2BJ7oBBAvUPij3aANcYjYQqueprX9X30sKyc4b9l0e5P56v1gQOJvo7dG47UKaJgWKFzgweqjN6nCt7WIngk%3D)
 
    
